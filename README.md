@@ -1,6 +1,10 @@
-# SisOp-2025
-# LATIHAN
-
+# Sistem Operasi 2025
+# Latihan Sistem Bilangan
+---
+## Nama: Aqilah Salamatuddin
+## NRP : 3124500054
+## KELAS : D3 IT B
+---
 ## 1. Basis Bilangan
 
 ### A. Bilangan Biner
