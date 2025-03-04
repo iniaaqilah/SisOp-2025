@@ -4,7 +4,7 @@
 **NRP**: 3124500054  
 **Kelas**: D3 IT B  
 
-# TASK 1 : 
+**TASK 1** : 
 Sistem bilangan
-# Task 2 :
+**Task 2** :
 Practise Exercise
