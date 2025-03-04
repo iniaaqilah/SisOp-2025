@@ -5,7 +5,7 @@
 **Kelas**: D3 IT B  
 
 **TASK 1** : 
-Sistem bilangan
+[Sistem bilangan](https://github.com/iniaaqilah/SisOp-2025/blob/main/SisOp-1.md)
 
 
 **Task 2** :
