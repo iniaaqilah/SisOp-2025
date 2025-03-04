@@ -9,4 +9,4 @@
 
 
 **Task 2** :
-Practise Exercise
+[Practise Exercise](https://github.com/iniaaqilah/SisOp-2025/blob/main/SisOp-2.md)
