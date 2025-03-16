@@ -11,4 +11,4 @@
 **Task 2** :
 [Practise Exercise](https://github.com/iniaaqilah/SisOp-2025/blob/main/SisOp-2.md)
 
-**TASK 3** :
+**TASK 3** : [Flowchart Booting System](https://github.com/iniaaqilah/SisOp-2025/blob/main/SisOs-3.md)
