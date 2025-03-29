@@ -1,4 +1,4 @@
-# Sejarah Sistem Operasi 
+# Merangkum Appendix dan Timeline Os
 ## Timeline Perkembangan Sistem Operasi
 
 | Tahun      | Sistem Operasi/Konsep Penting                                     | Kontribusi Utama                                                                 |
