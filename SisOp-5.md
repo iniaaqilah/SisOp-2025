@@ -86,7 +86,3 @@
 5. **GUI**: Transformasi antarmuka pengguna dari teks ke grafis.  
 
 ---
-
-**Referensi**:  
-- Dokumen asli: *Operating System Concepts, Appendix A*  
-- Timeline disusun berdasarkan kronologi dan kontribusi sistem operasi.  
