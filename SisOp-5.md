@@ -1,5 +1,4 @@
-# Sejarah Sistem Operasi yang Berpengaruh
-
+# Sejarah Sistem Operasi 
 ## Timeline Perkembangan Sistem Operasi
 
 | Tahun      | Sistem Operasi/Konsep Penting                                     | Kontribusi Utama                                                                 |
@@ -22,7 +21,7 @@
 
 ---
 
-## Rangkuman Sistem Operasi Penting
+## Rangkuman Appendix
 
 ### 1. **Atlas (1962)**
    - **Kontribusi**:  
