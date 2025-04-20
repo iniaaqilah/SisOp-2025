@@ -6,7 +6,7 @@ Pada model **single-thread**, sebuah proses hanya memiliki satu alur eksekusi (t
 
 Sebaliknya, pada model **multithread**, satu proses dapat memiliki beberapa thread yang berjalan secara “paralel” (baik di CPU multicore maupun secara timellice pada single core). Misalnya pada gambar, thread 1 dan thread 2 dapat mengeksekusi tugas A & B secara bersamaan, sementara thread 3 bisa menjalankan C. Dengan multithread, proses dapat tetap responsif saat satu thread memblok—thread lain tetap bisa memproses tugas berbeda. Tentunya, perlu mekanisme sinkronisasi (mutex, semaphore) untuk menghindari...
 
-![Konsep Single-thread vs Multithread]()
+![Konsep Single-thread vs Multithread](https://raw.githubusercontent.com/iniaaqilah/SisOp-2025/refs/heads/main/singlevsmulti.webp)
 
 ---
 
