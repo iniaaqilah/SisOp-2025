@@ -18,3 +18,5 @@
 **Task 5** : [Floops-Iops, Appendix, Timeline OS](https://github.com/iniaaqilah/SisOp-2025/blob/main/SisOp-5.md)
 
 **Task 6** : [How To Fork? And What is Fork?](https://github.com/iniaaqilah/SisOp-2025/blob/main/SisOp-6.md)
+
+**Task 7** : [Task Ethol]((https://github.com/iniaaqilah/SisOp-2025/tree/main/SisOp-7))
