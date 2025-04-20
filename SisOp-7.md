@@ -1,21 +1,19 @@
 
-# Laporan Chapter 4: Thread dan Evolusi Processor
-
 ## 1. Konsep Single-Thread dan Multithread
 
 ### Penjelasan
 Pada model **single-thread**, sebuah proses hanya memiliki satu alur eksekusi (thread) tunggal. Semua tugas—misalnya A, B, dan C—dijalankan satu per satu secara berurutan dalam satu jalur kontrol. Hal ini membuat eksekusi sederhana dan mudah di-debug karena tidak ada race condition atau sinkronisasi yang rumit. Namun, performanya terbatas: jika salah satu tugas memblok (misalnya menunggu I/O), keseluruhan proses pun terhenti—CPU tidak bisa memanfaatkan waktu tunggu untuk menjalankan tugas lain.
 
-Sebaliknya, pada model **multithread**, satu proses dapat memiliki beberapa thread yang berjalan secara “paralel” (baik di CPU multicore maupun secara timellice pada single core). Misalnya pada gambar, thread 1 dan thread 2 dapat mengeksekusi tugas A & B secara bersamaan, sementara thread 3 bisa menjalankan C. Dengan multithread, proses dapat tetap responsif saat satu thread memblok—thread lain tetap bisa memproses tugas berbeda. Tentunya, perlu mekanisme sinkronisasi (mutex, semaphore) untuk menghindari konflik data antar-thread di memori bersama.
+Sebaliknya, pada model **multithread**, satu proses dapat memiliki beberapa thread yang berjalan secara “paralel” (baik di CPU multicore maupun secara timellice pada single core). Misalnya pada gambar, thread 1 dan thread 2 dapat mengeksekusi tugas A & B secara bersamaan, sementara thread 3 bisa menjalankan C. Dengan multithread, proses dapat tetap responsif saat satu thread memblok—thread lain tetap bisa memproses tugas berbeda. Tentunya, perlu mekanisme sinkronisasi (mutex, semaphore) untuk menghindari...
 
-![Konsep Single-thread vs Multithread](A_2x1_digital_diagram_in_the_educational_image_vis.png)
+![Konsep Single-thread vs Multithread]()
 
 ---
 
 ## 2. Programming Exercise
 
 ### a. Penerapan Thread pada `SumTask.java`
-Pada `SumTask.java` kita menggunakan kerangka Fork/Join di Java, yang mengimplementasikan paradigma **divide-and-conquer** dengan `RecursiveTask`. Array sepanjang `SIZE` dibagi menjadi dua bagian saat panjang segmen melewati `THRESHOLD`. Bagian kiri dan kanan di-*fork()* sebagai subtask, lalu hasilnya di-*join()* dan dijumlahkan. `ForkJoinPool` secara otomatis mengelola pool thread dan work-stealing, memaksimalkan pemanfaatan core CPU. Ini cocok untuk beban kerja yang dapat dipecah berulang dengan cepat, karena overhead pembagian tugas dan manajemen thread relatif kecil dibandingkan jumlah pekerjaan yang diparalelkan.
+Pada `SumTask.java` kita menggunakan kerangka Fork/Join di Java, yang mengimplementasikan paradigma **divide-and-conquer** dengan `RecursiveTask`. Array sepanjang `SIZE` dibagi menjadi dua bagian saat panjang segmen melewati `THRESHOLD`. Bagian kiri dan kanan di-*fork()* sebagai subtask, lalu hasilnya di-*join()* dan dijumlahkan. `ForkJoinPool` secara otomatis mengelola pool thread dan work-stealing, memaksimalkan pemanfaatan core CPU. Ini cocok untuk beban kerja yang dapat dipecah berulang dengan cepat,...
 
 ### b. Penerapan Thread di POSIX (`thrd-posix.c`)
 Program `thrd-posix.c` mendemonstrasikan penggunaan **pthread** di sistem POSIX. Pertama, atribut thread (`pthread_attr_t`) diinisialisasi, lalu `pthread_create` memanggil fungsi runner (`void *runner(void*)`) untuk menghitung jumlah bilangan 1…N. Setelah pembuatan thread, `pthread_join` memastikan thread utama menunggu sampai subthread selesai sebelum mencetak hasil. Variabel `sum` dideklarasikan di global agar dapat diakses bersama, dan runtime POSIX menjamin eksekusi sinkron dengan `pthread_join`.
@@ -44,12 +42,12 @@ Di Windows, `CreateThread` digunakan untuk membuat thread lewat Win32 API. Fungs
 
 ---
 
-## 4. Jawaban Exercise Chapter 4 
+## 4. Jawaban Exercise Chapter 4
 
-### 4.1
+### **4.1**  
 **Program** adalah sekumpulan instruksi statis, sedangkan **proses** adalah program yang sedang dieksekusi. Proses mencakup state eksekusi, nilai register, counter, dan resources seperti file dan memori.
 
-### 4.2
+### **4.2**  
 Beberapa informasi yang disimpan dalam Process Control Block (PCB):
 - Process state
 - Program counter
@@ -59,7 +57,7 @@ Beberapa informasi yang disimpan dalam Process Control Block (PCB):
 - Accounting information
 - I/O status information
 
-### 4.3
+### **4.3**  
 Diagram tiga-state proses terdiri dari:
 - **Ready**: proses siap dijalankan
 - **Running**: proses sedang dijalankan CPU
@@ -71,14 +69,20 @@ Transisi:
 - Waiting → Ready (I/O selesai)
 - Running → Ready (preemption)
 
-### 4.4
+### **4.4**  
 Pendekatan `new → ready → running → terminated` memungkinkan OS mengatur semua state proses dan mengontrol sumber daya yang digunakan tiap proses.
 
-### 4.5
+### **4.5**  
 Context switch adalah proses menyimpan state proses saat ini dan memuat state proses berikutnya. Ini terjadi saat proses diganti, misal oleh interrupt atau scheduler.
 
-### 4.6
+### **4.6**  
 Multithreading bermanfaat karena:
 - Responsif (UI tetap responsif saat ada proses latar belakang)
 - Berbagi sumber daya antar thread
-- Ekonomis (tidak seberat proses baru)
+- Ekonomis (tidak seberat proses )
+
+---
+
+## Instruksi Pengumpulan
+
+Semua pekerjaan dilaporkan dalam bentuk tulisan di GitHub masing-masing. Pengumpulan di ethol hanya berupa **link repository GitHub**.
