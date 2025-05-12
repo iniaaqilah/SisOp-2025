@@ -322,7 +322,7 @@ Kode ini mengimplementasikan algoritma penjadwalan FCFS dengan mempertimbangkan 
 
 
 ## FSCS ALGORITHM WITHOUT ARRIVAL TIME
-<img src="./SisOp-8/FSCS-WithoutArrivalTime.jp"></img>
+<img src="./SisOp-8/FSCS-WithoutArrivalTime.jpg"></img>
 
 ## FSCS ALGORITHM WITH ARRIVAL TIME
 <img src="./SisOp-8/FSCS-WithArrivalTime.jpg"></img>
