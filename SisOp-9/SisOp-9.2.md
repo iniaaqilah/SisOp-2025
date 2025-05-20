@@ -136,4 +136,4 @@ Selesai di waktu 16
 
 🧑‍💻 8. Output Kode
 
-<img src="./SJFArrival.jpg"></img>
+<img src="./SJF-WithArrivalTime.png"></img>
