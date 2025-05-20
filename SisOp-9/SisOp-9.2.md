@@ -100,7 +100,7 @@ p[i].wt = p[i].tat - p[i].bt;
 | P2     | 2  | 4  | 12 | 10  | 6  | 6  |
 | P4     | 5  | 4  | 16 | 11  | 7  | 7  |
 
-<img src="./img/SJF/SJFArrival.jpg"></img>
+<img src="./SJFArrival.jpg"></img>
 
 **Penjelasan:**
 
