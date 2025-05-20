@@ -101,7 +101,7 @@ SJF dapat menggunakan penjadwalan preemptive dan non-preemptive. Versi preemptiv
 
 ### Gantt Chart
 
-<img src="./img/SJF/image.png"></img>
+<img src="./SJF-WithoutArrivalTime.png"></img>
 
 ### Source Code:
 
