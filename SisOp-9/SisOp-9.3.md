@@ -126,4 +126,4 @@ struct proc {
 
 🧑‍💻 6. Output Kode
 
-<img src="./img/SRTF-SchedullingAlgorithms.png"></img>
+<img src="./SRTF-SchedullingAlgorithms.png"></img>
